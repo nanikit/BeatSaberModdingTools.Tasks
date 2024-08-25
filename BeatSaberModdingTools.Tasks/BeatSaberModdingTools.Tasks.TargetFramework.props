@@ -14,7 +14,7 @@
         <BSMTTaskFolder Condition="!$(IsNetCoreApp)">net46</BSMTTaskFolder>
         <BSMTTaskFolder>netstandard2.0</BSMTTaskFolder>
         -->
-        <BSMTTaskAssembly>$(MSBuildThisFileDirectory)..\tasks\$(BSMTTaskFolder)\BeatSaberModdingTools.Tasks.dll</BSMTTaskAssembly>
+        <BSMTTaskAssembly>$(MSBuildThisFileDirectory)..\tasks\$(BSMTTaskFolder)\Nanikit.BeatSaberModdingTools.Tasks.dll</BSMTTaskAssembly>
         <BSMT_ImportOverridden Condition="'$(BuildTargetsVersion)' != '' AND '$(ImportBSMTTargets)' != 'False'">True</BSMT_ImportOverridden>
         <ImportBSMTTargets Condition="'$(BSMT_ImportOverridden)' != 'True' AND '$(ImportBSMTTargets)' == ''">true</ImportBSMTTargets>
     </PropertyGroup>
